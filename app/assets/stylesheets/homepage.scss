@@ -1,0 +1,61 @@
+// Place all the styles related to the homepage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#header{
+  margin-top: 20px;
+  text-align: center;
+
+  #navbar {
+
+    li{
+      font-size: 12px;
+      font-weight: normal;
+      display: inline;
+      margin-right: 20px;
+    }
+    a:link {
+      color: #000000;
+      text-decoration: none;
+    }
+    a:visited{
+      color: #000000;
+    }
+    a:hover{
+      color: #00aeff;
+    }
+    a:active{
+      color: #000000;
+    }
+  }
+
+}
+#banner {
+  background-color: #2E2F30;
+  padding: 2px 0px 5px 0px;
+  height: 549px;
+  text-align: center;
+}
+#about_us{
+  margin-top: 60px;
+  height: 440px;
+  text-align: left;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+  .introduction1 {
+    margin-top: 10px;
+    width: 490px;
+    float: left;
+    padding: 0px 0px 0px 180px;
+  }
+  .introduction2{
+      margin-top: 10px;
+      width: 490px;
+      float: left;
+      padding: 0px 0px 0px 70px;
+  }
+}
+#why_restore{
+  margin-top: 60px;
+  height: 440px;
+  background-color: #999999;
+}
