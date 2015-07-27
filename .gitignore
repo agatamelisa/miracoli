@@ -3,6 +3,8 @@ capybara-*.html
 .rspec
 .idea
 .DS_Store
+/image
+.idea/workspace.xml
 /log
 /tmp
 /db/*.sqlite3
