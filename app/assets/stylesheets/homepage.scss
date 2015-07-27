@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-//Logo
+//Logo & Header
 #header{
   margin-top: 20px;
   text-align: center;
@@ -17,22 +17,62 @@
   }
 }
 
+//footer
+#footer {
+  background-color: #31333E;
+  height: 450px;
+  width: 100%;
+  position: relative;
+  right: 10px;
+  bottom: -10px;
+  padding: 25px 50px;
+
+  //restore list separated
+  .fimage, .fmenu, .fcontact, .fsocial {
+    padding: 0px 0px 0px 50px;
+    float: left;
+    line-height: 1.4em;
+
+    // get rids of the list dot
+    ul {
+      list-style-type: none;
+      //makes the text white
+      li {
+        font-size: 20px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+}
+
+#our_services{
+  height: 500px;
+  width: 100%;
+  position: relative;
+  right: 10px;
+  bottom: -10px;
+  padding: 25px 50px;
+  // get rids of the list dot
+  ul {
+    list-style-type: none;
+    //makes the text white
+
+  }
+
+}
+
 // Rotating images
 #banner {
   background-color: #2E2F30;
-  height: 550px;
-  width: 2000px;
-  position: relative;
-  right: 10px;
-}
-
-//footer
-#banner2 {
-  background-color: #31333E;
   //the following are needed to make the color go across the page
-  width: 2000px;
+  height: 500px;
+  width: 100%;
   position: relative;
   right: 10px;
+  bottom: -10px;
+  padding: 25px 50px;
+
 }
 
 //about us description
@@ -55,12 +95,12 @@
 //why restore segment
 #why_restore{
   height: 500px;
-  background-image: url("restore_bg2.png");
-  width: 2000px;
+  width: 100%;
   position: relative;
   right: 10px;
   bottom: -10px;
   padding: 25px 50px;
+  background-color: green;
 
   //restore list separated
   .restore1, .restore2 {
@@ -87,4 +127,3 @@
     }
   }
 }
-
