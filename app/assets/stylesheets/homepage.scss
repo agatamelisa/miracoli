@@ -1,61 +1,65 @@
 // Place all the styles related to the homepage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Logo
 #header{
   margin-top: 20px;
   text-align: center;
 
+  //Navigation terms
   #navbar {
-
     li{
       font-size: 12px;
-      font-weight: normal;
       display: inline;
       margin-right: 20px;
     }
-    a:link {
-      color: #000000;
-      text-decoration: none;
-    }
-    a:visited{
-      color: #000000;
-    }
-    a:hover{
-      color: #00aeff;
-    }
-    a:active{
-      color: #000000;
-    }
   }
-
 }
+
+// Rotating images
 #banner {
   background-color: #2E2F30;
-  padding: 2px 0px 5px 0px;
-  height: 549px;
-  text-align: center;
+  height: 550px;
+  width: 2000px;
+  position: relative;
+  right: 10px;
 }
+
+//footer
+#banner2 {
+  background-color: #31333E;
+  //the following are needed to make the color go across the page
+  width: 2000px;
+  position: relative;
+  right: 10px;
+}
+
+//about us description
 #about_us{
   margin-top: 60px;
-  height: 440px;
+  height: 350px;
   text-align: left;
   line-height: 1.4em;
-  letter-spacing: 0.02em;
-  .introduction1 {
+  letter-spacing: 0.03em;
+  font-size: 13px;
+
+   //paragraph styles
+  .introduction1, .introduction2 {
     margin-top: 10px;
-    width: 490px;
+    width: 475px;
+    padding: 0px 0px 0px 100px;
     float: left;
-    padding: 0px 0px 0px 180px;
-  }
-  .introduction2{
-      margin-top: 10px;
-      width: 490px;
-      float: left;
-      padding: 0px 0px 0px 70px;
   }
 }
+//why restore segment
 #why_restore{
-  margin-top: 60px;
-  height: 440px;
-  background-color: #999999;
+  height: 580px;
+  background-image: url("restore_bg2.png");
+  width: 2000px;
+  position: relative;
+  right: 10px;
+  padding: 25px 50px;
+
 }
+
