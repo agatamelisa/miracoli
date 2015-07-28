@@ -5,16 +5,14 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'homepage#index'
-  resource :homepages do
-    member do
-      get 'index'
-      get 'restore'
-      get 'service'
-      get 'swatch'
-      get 'shop'
-      get 'contact'
-    end
-  end
+
+  get 'index'   => 'homepage#index'
+  get 'restore' => 'homepage#restore', as: :restore
+  get 'service' => 'homepage#service', as: :service
+  get 'swatch'  => 'homepage#swatch',  as: :swatch
+  get 'shop'    => 'homepage#shop'  ,  as: :shop
+  get 'contact' => 'homepage#contact', as: :contact
+
 
 
   # Example of regular route:

@@ -1,5 +1,18 @@
-<div id="banner">
+<div class="banner">
+  <div><%= image_tag 'banner_1.png' %></div>
+  <div><%= image_tag 'banner_1.png' %></div>
+  <div><%= image_tag 'banner_1.png' %></div>
 </div>
+<script>
+    $(document).ready(function(){
+        $('.banner').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true
+
+        });
+    });
+</script>
 
 <div id="about_us">
     <center><h1>About Us</h1></center>

@@ -2,7 +2,7 @@
   <div class="fimage">
     <ul>
       <li>
-        <%= image_tag 'logo.png' %>
+        <%= image_tag 'logo_footer.png' %>
       </li>
     </ul>
   </div>
@@ -11,12 +11,12 @@
     <ul>
       <li>Menu</li>
       </br></br>
-      <li> Home</li>
-      <li> Why Restore?</li>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Why Restore?", restore_path %></li>
       <li> Product Type</li>
-      <li> Swatch Book</li>
-      <li> Shop</li>
-      <li> Contact Us</li>
+      <li><%= link_to "Swatch Book", swatch_path %></li>
+      <li><%= link_to "Shop", shop_path %></li>
+      <li><%= link_to "Contact Us", contact_path %></li>
     </ul>
   </div>
 
