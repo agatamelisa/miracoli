@@ -1,0 +1,125 @@
+// Place all the styles related to the homepage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Logo & Header
+#header{
+  margin-top: 20px;
+  text-align: center;
+
+  //Navigation terms
+  #navbar {
+    li{
+      font-size: 12px;
+      display: inline;
+      margin-right: 20px;
+    }
+  }
+}
+
+//footer
+#footer {
+  background-color: #31333E;
+  height: 450px;
+  width: 100%;
+  position: relative;
+  right: 10px;
+  bottom: -10px;
+  padding: 25px 50px;
+
+  //restore list separated
+  .fimage, .fmenu, .fcontact, .fsocial {
+    padding: 0px 0px 0px 50px;
+    float: left;
+    line-height: 1.4em;
+
+    // get rids of the list dot
+    ul {
+      list-style-type: none;
+      //makes the text white
+      li {
+        font-size: 20px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+}
+
+#our_services{
+  height: 500px;
+  width: 100%;
+  position: relative;
+  right: 10px;
+  bottom: -10px;
+  padding: 25px 50px;
+  // get rids of the list dot
+  ul {
+    list-style-type: none;
+    //makes the text white
+
+  }
+
+}
+
+// Rotating images
+.banner {
+  //the following are needed to make the color go across the page
+  height: 500px;
+  width: 100%;
+  position: relative;
+  left: 50px;
+}
+
+//about us description
+#about_us{
+  margin-top: 60px;
+  height: 350px;
+  text-align: left;
+  line-height: 1.4em;
+  letter-spacing: 0.03em;
+  font-size: 13px;
+
+   //paragraph styles
+  .introduction1, .introduction2 {
+    margin-top: 10px;
+    width: 475px;
+    padding: 0px 0px 0px 100px;
+    float: left;
+  }
+}
+//why restore segment
+#why_restore{
+  height: 500px;
+  width: 100%;
+  position: relative;
+  right: 10px;
+  bottom: -10px;
+  padding: 25px 50px;
+  background-color: green;
+
+  //restore list separated
+  .restore1, .restore2 {
+    margin-top: 25px;
+    width: 475px;
+    padding: 0px 0px 0px 100px;
+    float: left;
+    line-height: 5em;
+
+    // get rids of the list dot
+    ul {
+      list-style-type: none;
+      //makes the text white
+      li {
+        font-style: Bold;
+        font-size: 20px;
+        color: #FFFFFF;
+        //sets the image in the middle
+        img {
+          position: relative;
+          top: 40px;
+        }
+      }
+    }
+  }
+}
