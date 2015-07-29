@@ -40,6 +40,11 @@
       li {
         font-size: 20px;
         color: #FFFFFF;
+        margin-right: 40px;
+        img {
+          position: relative;
+          top: 10px;
+        }
       }
     }
   }
@@ -133,14 +138,57 @@
   right: 10px;
   bottom: -10px;
   padding: 25px 50px;
+
+  //header element of contact us
   #contact_nums{
     li{
       display: inline;
-      margin-right: 100px;
-      font-style: Bold;
-      font-size: 70px;
-      color: #FFFFFF;
+      margin-right: 430px;
+    }
+    margin-top: 50px;
+    position: relative;
+    height: 100px;
+    padding-left: 200px;
+
+  }
+  //body element of the contact us
+  .two_column{
+    height: 700px;
+    position: relative;
+    padding-left: 200px;
+
+    //left side of contact us
+    #visit_us{
+      width: 50%;
+      position: relative;
+      float: left;
+      ul {
+        list-style-type: none;
+        li{
+          font-size: 20px;
+          color: #FFFFFF;
+          #visit_head{
+            font-size: 30px;
+            color: #FFFFFF;
+            right: 25px;
+            position: relative;
+          }
+          #visit_head2{
+            font-size: 25px;
+            right: 25px;
+            color: #FFFFFF
+          }
+        }
+      }
+    }
+
+    //right side of contact us
+    #request_prop{
+      width: 50%;
+      position: relative;
+      float: right;
+      left: 30px;
+
     }
   }
 }
-

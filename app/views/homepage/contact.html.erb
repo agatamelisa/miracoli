@@ -2,17 +2,54 @@
   <div id="contact_nums">
     <ul>
       <li>
-        01
+        <%= image_tag 'visit_us.png' %>
       </li>
       <li>
-        02
+        <%= image_tag 'visit_us_2.png' %>
       </li>
      </ul>
   </div>
-  <div id="visit_us">
-
-  </div>
-  <div id="request_prop">
-
+  <div class="two_column">
+    <div id="visit_us">
+      <ul>
+        <li><div id="visit_head"><%= image_tag 'point.png' %> Miracoli Furniture, Inc</div> </li>
+        <li> 1026 E.Lacy Ave.</li>
+        <li> Anaheim, CA 92805</li>
+        </br>
+        <li> miracolifurniture@yahoo.com</li>
+        </br>
+        <li>Office: (714) 502-9214</li>
+        <li>Fax: (714) 502-9120</li>
+        </br>
+        <li><div id="visit_head2">Our Hours Are:</div></li>
+        </br>
+        <li>Monday-Friday</li>
+        <li>From 8:00am - 4:00p.m.</li>
+        </br></br>
+        <li>For updates, follow us on Social Media:</li>
+        </br>
+        <li><%= image_tag 'fb.png' %>  <%= image_tag 'insta.png' %></li>
+      </ul>
+    </div>
+    <div id="request_prop">
+      <%= form_tag('/contact_email') do -%>
+          <div><%= label_tag 'name' %></div>
+          <div><%= text_field_tag 'Name','',class: "contact_input" %></div>
+          </br>
+          <div><%= label_tag 'Phone' %></div>
+          <div><%= phone_field_tag 'Phone','',class: "contact_input" %></div>
+          </br>
+          <div><%= label_tag 'email' %></div>
+          <div><%= email_field_tag 'email','',class: "contact_input" %></div>
+          </br>
+          <div><%= label_tag 'furniture' %></div>
+          <div><%= text_area_tag 'furniture','',class: "contact_input" %></div>
+          </br>
+          <div><%= label_tag 'services' %></div>
+          <div><%= text_area_tag 'services','',class: "contact_input" %></div>
+          </br>
+          <div><%= submit_tag 'Submit' %></div>
+      <% end -%>
+    </div>
   </div>
 </div>

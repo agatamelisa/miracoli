@@ -6,12 +6,13 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'homepage#index'
 
-  get 'index'   => 'homepage#index'
-  get 'restore' => 'homepage#restore', as: :restore
-  get 'service' => 'homepage#service', as: :service
-  get 'swatch'  => 'homepage#swatch',  as: :swatch
-  get 'shop'    => 'homepage#shop'  ,  as: :shop
-  get 'contact' => 'homepage#contact', as: :contact
+  get 'index'         => 'homepage#index'
+  get 'restore'       => 'homepage#restore', as: :restore
+  get 'service'       => 'homepage#service', as: :service
+  get 'swatch'        => 'homepage#swatch',  as: :swatch
+  get 'shop'          => 'homepage#shop'  ,  as: :shop
+  get 'contact'       => 'homepage#contact', as: :contact
+  post 'contact_email' => 'homepage#contact_email'
 
 
 

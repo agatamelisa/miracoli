@@ -11,4 +11,7 @@ class HomepageController < ApplicationController
   end
   def contact
   end
+  def contact_email
+    redirect_to contact_path
+  end
 end
