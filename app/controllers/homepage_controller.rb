@@ -12,6 +12,7 @@ class HomepageController < ApplicationController
   def contact
   end
   def contact_email
+    binding.pry
     redirect_to contact_path
   end
 end

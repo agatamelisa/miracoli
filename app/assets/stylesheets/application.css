@@ -20,23 +20,47 @@
     font-weight: normal;
 }
 a:link{
-    color: #000000;
+    color: white;
     text-decoration: none;
 }
 a:visited{
-    color: #000000;
+    color: black;
 }
 a:hover{
     color: #00aeff;
 }
 a:active{
-    color: #000000;
+    color: white;
 }
 
 .slick-prev:before, .slick-next:before {
     color:red !important;
 }
 
+.btn {
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #2b2d2e;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
 
 
 

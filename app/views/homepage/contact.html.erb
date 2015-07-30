@@ -32,23 +32,33 @@
       </ul>
     </div>
     <div id="request_prop">
-      <%= form_tag('/contact_email') do -%>
-          <div><%= label_tag 'name' %></div>
-          <div><%= text_field_tag 'Name','',class: "contact_input" %></div>
+      <%= form_tag '/contact_email', multipart: true do -%>
+          <div><%= label_tag 'name',nil,class: "contact_input"  %></div>
+          <div><%= text_field_tag 'Name','',class: "contact_size" %></div>
           </br>
-          <div><%= label_tag 'Phone' %></div>
-          <div><%= phone_field_tag 'Phone','',class: "contact_input" %></div>
+          <div><%= label_tag 'Phone',nil,class: "contact_input"  %></div>
+          <div><%= phone_field_tag 'Phone','',class: "contact_size" %></div>
           </br>
-          <div><%= label_tag 'email' %></div>
-          <div><%= email_field_tag 'email','',class: "contact_input" %></div>
+          <div><%= label_tag 'email',nil,class: "contact_input"  %></div>
+          <div><%= email_field_tag 'email','',class: "contact_size"%></div>
           </br>
-          <div><%= label_tag 'furniture' %></div>
-          <div><%= text_area_tag 'furniture','',class: "contact_input" %></div>
+          <div><%= label_tag 'furniture',nil,class: "contact_input"  %></div>
+          <div><%= text_area_tag 'furniture','',class: "contact_tsize" %></div>
           </br>
-          <div><%= label_tag 'services' %></div>
-          <div><%= text_area_tag 'services','',class: "contact_input" %></div>
+          <div><%= label_tag 'services',nil,class: "contact_input" %></div>
+          <div><%= text_area_tag 'services', '',class: "contact_tsize" %></div>
+          <div id="theme"><%= label_tag 'theme', 'Pick Up or Delivery? (Optional):',class: "contact_input" %>
+          <% [ 'Yes Please!', 'NO', 'Pick-Up', 'Delivery Only'].each do |theme| %>
+              <br><%= radio_button_tag 'theme', theme, theme %>
+              <%= theme.humanize %>
+          <% end %>
+          </div>
           </br>
-          <div><%= submit_tag 'Submit' %></div>
+          <div><%= label_tag 'contact_attach', 'Upload Attachments:', class: "custom-file-upload" %><i class="fa fa-cloud-upload"></i> Custom Uploadx</div>
+          <div><%= file_field_tag 'contact_attach[]', multiple: true,class: 'btn' %></div>
+          </br>
+          <div><%= submit_tag 'Submit',class: 'btn' %></div>
+          <div>You will be contacted within 1 business day.</div>
       <% end -%>
     </div>
   </div>
