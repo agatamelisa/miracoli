@@ -10,6 +10,8 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require owl.carousel
+ *= require owl.theme
  *= require_tree .
  *= require_self
  */
@@ -18,25 +20,28 @@
     font-family: Frutiger, Helvetica, Verdana, sans-serif;
     color: black;
     font-weight: normal;
+    margin: 0;
+    padding: 0;
 }
 a:link{
-    color: #000000;
+    color: black;
     text-decoration: none;
 }
 a:visited{
-    color: #000000;
+    color: black;
 }
 a:hover{
     color: #00aeff;
 }
 a:active{
-    color: #000000;
+    color: black;
 }
 
 .slick-prev:before, .slick-next:before {
     color:red !important;
 }
 
-
-
-
+.melbtn{
+    background:url(submit_btn.png);
+    color: #ffffff;
+}
