@@ -6,6 +6,8 @@
 #header{
   margin-top: 20px;
   text-align: center;
+  width: auto;
+
 
   //Navigation terms
   #navbar {
@@ -16,25 +18,30 @@
     }
   }
 }
+//end of header
 
 //footer
 #footer {
   background-color: #31333E;
-  height: 460px;
-  width: 100%;
+  height: 400px;
+  width: auto;
   position: relative;
-  right: 10px;
-  bottom: -10px;
-  padding: 45px 50px;
+  padding-top: 50px;
+  a:link{
+    color: #ffffff;
+    text-decoration: none;
+  }
   a:visited{
-    color: white;
+    color: #ffffff;
+  }
+  a:active{
+    color: #ffffff;
   }
 
   //restore list separated
   .fimage, .fmenu, .fcontact, .fsocial {
     padding: 0px 0px 0px 50px;
     float: left;
-    line-height: 1.4em;
 
     // get rids of the list dot
     ul {
@@ -57,96 +64,97 @@
       }
     }
   }
-
 }
+//end of footer
 
-#our_services{
-  height: 500px;
-  width: 100%;
-  position: relative;
-  right: 10px;
-  bottom: -10px;
-  padding: 25px 50px;
-  // get rids of the list dot
-  ul {
-    list-style-type: none;
-    //makes the text white
+//start index
+#index{
+  height: 2000px;
 
+  //about us description
+  #about_us{
+    margin-top: 60px;
+    height: 350px;
+    text-align: left;
+    line-height: 1.4em;
+    letter-spacing: 0.03em;
+    font-size: 13px;
+
+    //paragraph styles
+    .introduction1, .introduction2 {
+      margin-top: 10px;
+      width: 475px;
+      padding: 0px 0px 0px 100px;
+      float: left;
+    }
+  }
+  //why restore segment
+  #why_restore{
+    height: 500px;
+    width: auto;
+    position: relative;
+    right: 10px;
+    bottom: -10px;
+    padding: 25px 50px;
+    background: url('restore_bg.png');
+    background-size:100% 100%;
+
+
+    //restore list separated
+    .restore1, .restore2 {
+      margin-top: 25px;
+      width: 475px;
+      padding: 0px 0px 0px 100px;
+      float: left;
+      line-height: 5em;
+
+      // get rids of the list dot
+      ul {
+        list-style-type: none;
+        //makes the text white
+        li {
+          font-style: Bold;
+          font-size: 20px;
+          color: #FFFFFF;
+          //sets the image in the middle
+          img {
+            position: relative;
+            top: 40px;
+          }
+        }
+      }
+    }
   }
 
-}
-
-// Rotating images
-.banner {
-  //the following are needed to make the color go across the page
-  height: 500px;
-  width: 100%;
-  position: relative;
-  left: 50px;
-}
-
-//about us description
-#about_us{
-  margin-top: 60px;
-  height: 350px;
-  text-align: left;
-  line-height: 1.4em;
-  letter-spacing: 0.03em;
-  font-size: 13px;
-
-   //paragraph styles
-  .introduction1, .introduction2 {
-    margin-top: 10px;
-    width: 475px;
-    padding: 0px 0px 0px 100px;
-    float: left;
-  }
-}
-//why restore segment
-#why_restore{
-  height: 500px;
-  width: 100%;
-  position: relative;
-  right: 10px;
-  bottom: -10px;
-  padding: 25px 50px;
-  background-color: green;
-
-  //restore list separated
-  .restore1, .restore2 {
-    margin-top: 25px;
-    width: 475px;
-    padding: 0px 0px 0px 100px;
-    float: left;
-    line-height: 5em;
+  #our_services{
+    height: 500px;
+    width: auto;
+    position: relative;
+    padding: 25px 50px;
 
     // get rids of the list dot
     ul {
       list-style-type: none;
       //makes the text white
-      li {
-        font-style: Bold;
-        font-size: 20px;
-        color: #FFFFFF;
-        //sets the image in the middle
-        img {
-          position: relative;
-          top: 40px;
-        }
-      }
     }
+
   }
+
+  #owl-carousel{
+    padding-left: 20px;
+    width: auto;
+  }
+
+
 }
-//all homepage css done
+//end index
 
 //start of contact
 #contact_us{
   background-color: #72bd44;
   height: 800px;
-  width: 100%;
+  width: auto;
   position: relative;
-  right: 10px;
-  bottom: -10px;
   padding: 25px 50px;
 
   //header element of contact us
@@ -222,38 +230,62 @@
 //why restore page
 #restore{
   background: url('why-restore_bg.jpg');
+  background-size:100% 100%;
   height: 2000px;
-  width: 100%;
+  width: auto;
   position: relative;
   right: 10px;
   bottom: -10px;
-  padding: 25px 50px;
+  padding: 30px 50px;
+  font-size: 25px;
+
+  //why restore header
   #rtitle{
     color: #ffffff;
-    font-size: 30px;
+    font-size: 60px;
+    font-weight: bold;
     margin-left: 200px;
+    padding-bottom: 30px;
+    padding-top: 10px;
   }
+
+  //bolded text inside
   .rheader{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 35px;
+    font-weight: bold;
   }
+
+  //to push text under image
+  .rtext{
+    padding-top: 10px;
+    color: #ffffff;
+  }
+
+  //left hand side text
   .rbody{
     color: #ffffff;
     height: 100px;
     margin-left: 200px;
+    margin-bottom: 200px;
     .align-left{
       float: left;
-      margin-right: 10px;
+      margin-right: 100px;
     }
   }
+
+  //right hand side text
   .rlbody{
     color: #ffffff;
     height: 100px;
     margin-right: 200px;
     text-align: right;
+    margin-bottom: 200px;
     .align-right{
       float: right;
-      margin-left: 10px;
+      margin-left: 100px;
     }
   }
 }
+//end of why restore page
+

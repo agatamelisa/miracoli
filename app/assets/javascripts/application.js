@@ -10,5 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require owl.carousel
 //= require turbolinks
 //= require_tree .
