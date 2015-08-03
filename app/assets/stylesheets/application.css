@@ -49,18 +49,7 @@ a:active{
     text-decoration: none;
 }
 
-.btn:hover {
-    text-decoration: none;
+.melbtn{
+    background:url(submit_btn.png);
+    color: #ffffff;
 }
-input[type="file"] {
-    display: none;
-}
-.custom-file-upload {
-    border: 1px solid #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
-}
-
-
-

@@ -54,10 +54,10 @@
           <% end %>
           </div>
           </br>
-          <div><%= label_tag 'contact_attach', 'Upload Attachments:', class: "custom-file-upload" %><i class="fa fa-cloud-upload"></i> Custom Uploadx</div>
-          <div><%= file_field_tag 'contact_attach[]', multiple: true,class: 'btn' %></div>
-          </br>
-          <div><%= submit_tag 'Submit',class: 'btn' %></div>
+          <div><%= label_tag 'contact_attach', 'Upload Attachments:'%></div>
+          <div class="upload"><%= file_field_tag 'contact_attach[]', multiple: true %></div>
+          <br>
+          <div><%= submit_tag 'Submit',class: 'melbtn' %></div>
           <div>You will be contacted within 1 business day.</div>
       <% end -%>
     </div>

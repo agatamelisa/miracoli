@@ -138,6 +138,7 @@
   }
 }
 //all homepage css done
+
 //start of contact
 #contact_us{
   background-color: #72bd44;
@@ -213,6 +214,46 @@
         height: 70px;
       }
 
+    }
+  }
+}
+//end of contact
+
+//why restore page
+#restore{
+  background: url('why-restore_bg.jpg');
+  height: 2000px;
+  width: 100%;
+  position: relative;
+  right: 10px;
+  bottom: -10px;
+  padding: 25px 50px;
+  #rtitle{
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 200px;
+  }
+  .rheader{
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .rbody{
+    color: #ffffff;
+    height: 100px;
+    margin-left: 200px;
+    .align-left{
+      float: left;
+      margin-right: 10px;
+    }
+  }
+  .rlbody{
+    color: #ffffff;
+    height: 100px;
+    margin-right: 200px;
+    text-align: right;
+    .align-right{
+      float: right;
+      margin-left: 10px;
     }
   }
 }
