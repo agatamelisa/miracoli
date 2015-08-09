@@ -16,32 +16,3 @@
  *= require_self
  */
 
-* {
-    font-family: Frutiger, Helvetica, Verdana, sans-serif;
-    color: black;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-}
-a:link{
-    color: black;
-    text-decoration: none;
-}
-a:visited{
-    color: black;
-}
-a:hover{
-    color: #00aeff;
-}
-a:active{
-    color: black;
-}
-
-.slick-prev:before, .slick-next:before {
-    color:red !important;
-}
-
-.melbtn{
-    background:url(submit_btn.png);
-    color: #ffffff;
-}
