@@ -16,3 +16,8 @@
  *= require_self
  */
 
+
+#owl-carousel .item img{
+  width: 100%;
+}
+
