@@ -8,8 +8,10 @@
   <div id="about_us" class="container">
     <center><h1>About Us</h1></center>
     <div class="row">
-      <div class="introduction1 col-md-6">
-        <p>Miracoli Furniture, Inc. is a family owned and operated business.
+      <div class="introduction1 col-md-5 col-md-offset-1">
+        <p>
+        Miracoli Furniture, Inc. is a family owned and operated business.
+        <br>
         We are committed to bringing you into our family by offering you the best prices,
         best services and the most environmental form of reupholstering your patio furniture.
         We have over 29 years of experience in the manufacturing of aluminum outdoor furniture,
@@ -17,13 +19,14 @@
         restoration of your outdoor furniture.
         </br></br>
         Our services include re-sling, re-strapping, sandblast & powdercoat,
-        welding as well as the manufacture of umbrella covers, cushions and parts. 
-        Our refinishing processes can restore and customize your outdoor furniture to look new again.</p>
+        welding as well as the manufacture of umbrella covers, cushions and parts.
+        Our refinishing processes can restore and customize your outdoor furniture to look new again.
+        </p>
       </div>
-      <div class="introduction2 col-md-6">
+      <div class="col-md-5">
         <p>When you contact us, you will be assured to always speak to a representative that will
         answer all your questions and concerns. By working on a case-to-case basis,
-        we commit to making your experience effortless.
+        we commit to making your <br>experience effortless.
         </br></br>
         You are welcome to call, e-mail, and or request a proposal at any time. Because your
         inquiry is important to us, we commit to contacting you within 1 business day, if not immediately.
@@ -35,42 +38,53 @@
     </div>
   </div>
 
-  <center><h1>Why Restore?</h1></center>
+  <div>
+    <center><h1>Why Restore?</h1></center>
+  </div>
+
   <div id="why_restore">
-    <div class="restore1">
-      <ul>
-        <li><%= image_tag 'go_green.png' %> Go Green!</li>
-        <li><%= image_tag 'customize.png' %> Customize Your Furniture</li>
-        <li><%= image_tag 'services.png' %> Best Customer Service</li>
-      </ul>
-    </div>
-    <div class="restore2">
-      <ul>
-        <li><%= image_tag 'savings.png' %> Savings</li>
-        <li><%= image_tag 'repairs.png' %> Case-To-Case Repairs</li>
-        <li><%= image_tag 'delivery.png' %> Pick-UP & Delivery Services</li>
-      </ul>
+    <div class="container">
+      <div class="row">
+
+        <div class="restore1 col-md-5 col-md-offset-1">
+          <ul>
+            <li><%= image_tag 'go_green.png' %>&nbsp;&nbsp;Go Green!</li>
+            <li><%= image_tag 'customize.png' %>&nbsp;&nbsp;Customize Your Furniture</li>
+            <li><%= image_tag 'services.png' %>&nbsp;&nbsp; Best Customer Service</li>
+          </ul>
+        </div>
+
+        <div class="restore2 col-md-5">
+          <ul>
+            <li><%= image_tag 'savings.png' %>&nbsp;&nbsp; Savings</li>
+            <li><%= image_tag 'repairs.png' %>&nbsp;&nbsp; Case-To-Case Repairs</li>
+            <li><%= image_tag 'delivery.png' %>&nbsp;&nbsp;Pick-UP & Delivery Services</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div id="our_services">
-    <center><h1>Our Services</h1>
-      </br></br>
-      <ul>
-        <li><%= image_tag 're-sling.png' %><%= image_tag 'cushion.png' %><%= image_tag 'strip_n_powdercoat.png' %><%= image_tag 're-strap.png' %> </li>
-        <li>Re-Sling
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Cushion
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          String & Powdercoat
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Re-Strap</li>
-      </ul>
-    </center>
+  <div id="our_services" class= "container">
+    <center><h1>Our Services</h1></center>
+    </br>
+    <div class="row">
+      <div class="col-md-3"><%= image_tag 're-sling.png' %></div>
+      <div class="col-md-3"><%= image_tag 'cushion.png' %></div>
+      <div class="col-md-3"><%= image_tag 'strip_n_powdercoat.png' %></div>
+      <div class="col-md-3"><%= image_tag 're-strap.png' %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">Re-Sling</div>
+      <div class="col-md-3">Cushion</div>
+      <div class="col-md-3">String &amp; Powdercoat</div>
+      <div class="col-md-3">Re-Strap</div>
+    </div> 
+
   </div>
+
 </div>
 
 <script>

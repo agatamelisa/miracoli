@@ -7,9 +7,44 @@
     margin-right: auto;
   }
   ul{
+    margin-top: 20px;
     display: table;
     margin-left: auto;
     margin-right: auto;
   }
 }
+
+#index{
+  #about_us{
+    text-align: left;
+    line-height: 1.4em;
+    letter-spacing: 0.05em;
+    font-size: 13px;
+  }
+
+  #why_restore{
+    margin-top: 20px;
+    background: url('restore_bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    ul{
+      list-style-type: none;
+      padding: 50px 0px 0px 0px;
+      li{
+        margin:0 0 40px 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF
+      }
+    }
+  }
+
+  #our_services{
+    
+  }
+
+}
+
+
 
