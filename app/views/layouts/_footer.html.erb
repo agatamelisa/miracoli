@@ -1,54 +1,77 @@
 <div id="footer">
-  <div class="fimage">
-    <ul>
-      <li>
-        <%= image_tag 'logo_footer.png' %>
-      </li>
-    </ul>
-  </div>
-
-  <div class="fmenu">
-    <ul>
-      <li><div class='fheader'>MENU</div></li>
-      </br>
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "Why Restore?", restore_path %></li>
-      <li> Product Type</li>
-      <li><%= link_to "Swatch Book", swatch_path %></li>
-      <li><%= link_to "Shop", shop_path %></li>
-      <li><%= link_to "Contact Us", contact_path %></li>
-    </ul>
-  </div>
-
-  <div class="fcontact">
-    <ul>
-      <li><div class="fheader"> CONTACT US</div> </li>
-      </br>
-      <li> 1026 E.Lacy Ave., Anaheim,</li>
-      <li> CA 92805</li>
-      </br>
-      <li> Office: (714) 502-9214</li>
-      <li> Fax: (714)502-9120</li>
-      </br>
-      <li> info@miracolifurniture.net</li>
-      <li> miracolifurniture@yahoo.com</li>
-      </br>
-      <li>Nazario Arroyo</li>
-      <li>Cell: (714) 651-2544</li>
-      </br>
-      <li>Our Hours Are:</li>
-      <li>Monday-Friday</li>
-      <li>From 8:00am - 4:00p.m. Pacific Time</li>
-      <li>Saturday upon request</li>
-    </ul>
-  </div>
-
-  <div class="fsocial">
-    <ul>
-      <li><div class="fheader">SOCIAL</div></li>
-      <li> <%= image_tag 'fb_footer.png' %>&nbsp;&nbsp;Facebook</li>
-      <li> <%= image_tag 'insta_footer.png' %>&nbsp;&nbsp;Instagram</li>
-      <li> <%= image_tag 'email_footer.png' %>&nbsp;&nbsp;Email</li>
-    </ul>
+  <div class="container">
+    <div class="row">
+      <div id="fimage" class="col-xs-3">
+          <%= image_tag 'logo_footer.png' %>
+      </div>
+      
+      <div id="fmenu" class="col-xs-3">
+        <span class="subtopic">Menu</span>
+        </br>
+        </br>
+        <%= link_to "Home", root_path %>
+        <br>
+        <%= link_to "Why Restore?", restore_path %>
+        <br>
+        <%= link_to "Swatch Book", swatch_path %>
+        <br>
+        <%= link_to "Shop", shop_path %>
+        <br>
+        <%= link_to "Contact Us", contact_path %>
+      </div>
+      
+      <div id="fcontact" class="col-xs-3">
+        <span class="subtopic">Contact Us</span>
+        </br>
+        </br>
+        1026 E.Lacy Ave., Anaheim,
+        <br>
+        CA 92805
+        </br>
+        </br>
+        Office: (714) 502-9214
+        <br>
+        Fax: (714)502-9120
+        </br>
+        </br>
+        info@miracolifurniture.net
+        <br>
+        miracolifurniture@yahoo.com
+        </br>
+        </br>
+        Nazario Arroyo
+        <br>
+        Cell: (714) 651-2544
+        </br>
+        </br>
+        Our Hours Are:
+        <br>
+        Monday-Friday
+        <br>
+        From 8:00am - 4:00p.m. Pacific Time
+        <br>
+        Saturday upon request
+      </div>
+      
+      <div id="fsocial" class="col-xs-3">
+        <span class="subtopic">Social</span>
+        </br>
+        </br>
+        <%= link_to "http://www.facebook.com/", :target => "_blank" do %>
+          <%= image_tag 'fb_footer.png' %>&nbsp;&nbsp;Facebook
+        <% end %>
+        </br>
+        </br>
+        <%= link_to "http://www.instagram.com", :target => "_blank" do %>
+          <%= image_tag 'insta_footer.png' %>&nbsp;&nbsp;Instagram
+        <% end %>
+        </br>
+        </br>
+        <%= mail_to "me@domain.com" do %>
+          <%= image_tag 'email_footer.png' %>&nbsp;&nbsp;Email
+        <% end %>
+      </div>
+        
+    </div>
   </div>
 </div>

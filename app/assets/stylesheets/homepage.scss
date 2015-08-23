@@ -14,6 +14,20 @@
   }
 }
 
+#footer{
+  background-color: #31333E;
+  padding: 20px;
+  color: #FFFFFF;
+  a {
+    color: #FFFFFF;
+  }
+
+  .subtopic{
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
 #index{
   #about_us{
     text-align: left;
@@ -41,10 +55,49 @@
   }
 
   #our_services{
-    
+    padding-bottom: 40px;
+    a {
+      color: #000000;
+    }
+
+    #service_list{
+      li{
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+
+    #sub_list{
+      padding: 0px;
+      list-style-type: none;
+      li{
+        padding: 0px;
+      }
+    }
+
+    #service_link{
+      bottom: 140px;
+      left: 10px;
+      position: relative;
+    }
   }
 
 }
 
-
-
+#restore{
+  background: url('why-restore_bg.jpg');
+  background-size:100% 100%;
+  color: #FFFFFF;
+  padding-top: 20px;
+  .subheader{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .align-left{
+    float: left;
+  }  
+  .align-right{
+    float: right;
+  }
+}

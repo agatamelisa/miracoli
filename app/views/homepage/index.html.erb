@@ -46,7 +46,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="restore1 col-md-5 col-md-offset-1">
+        <div class="restore1 col-xs-5 col-xs-offset-1">
           <ul>
             <li><%= image_tag 'go_green.png' %>&nbsp;&nbsp;Go Green!</li>
             <li><%= image_tag 'customize.png' %>&nbsp;&nbsp;Customize Your Furniture</li>
@@ -54,7 +54,7 @@
           </ul>
         </div>
 
-        <div class="restore2 col-md-5">
+        <div class="restore2 col-xs-5">
           <ul>
             <li><%= image_tag 'savings.png' %>&nbsp;&nbsp; Savings</li>
             <li><%= image_tag 'repairs.png' %>&nbsp;&nbsp; Case-To-Case Repairs</li>
@@ -66,23 +66,59 @@
     </div>
   </div>
 
-  <div id="our_services" class= "container">
+  <div id="our_services">
     <center><h1>Our Services</h1></center>
     </br>
-    <div class="row">
-      <div class="col-md-3"><%= image_tag 're-sling.png' %></div>
-      <div class="col-md-3"><%= image_tag 'cushion.png' %></div>
-      <div class="col-md-3"><%= image_tag 'strip_n_powdercoat.png' %></div>
-      <div class="col-md-3"><%= image_tag 're-strap.png' %></div>
-    </div>
+    <center>
+        <ul class="list-inline" id="service_list">
+          <li>
+            <ul id="sub_list">
+              <li>
+                <%= image_tag 're-sling.png' %>
+              </li><!-- 
+              --><li>
+                Re-Sling
+              </li>
+            </ul>
+          </li><!-- 
 
-    <div class="row">
-      <div class="col-md-3">Re-Sling</div>
-      <div class="col-md-3">Cushion</div>
-      <div class="col-md-3">String &amp; Powdercoat</div>
-      <div class="col-md-3">Re-Strap</div>
-    </div> 
+          --><li>
+            <ul id="sub_list">
+              <li>
+                <%= image_tag 'cushion.png' %>
+              </li><!-- 
+              --><li>
+                Cushion
+              </li>
+            </ul>
+          </li><!-- 
 
+          --><li>
+            <ul id="sub_list">
+              <li>
+                <%= image_tag 'strip_n_powdercoat.png' %>
+              </li><!-- 
+          --><li>
+                Strip and Powercoat
+              </li>
+            </ul>
+          </li><!-- 
+
+          --><li>
+            <ul id="sub_list">
+              <li>
+                <%= image_tag 're-strap.png' %>
+              </li><!-- 
+           --><li>
+                Re-Strap
+              </li>
+            </ul>
+          </li>
+          <li>
+            <%= link_to 'MORE >>', service_path, id: "service_link" %>
+          </li>
+        </ul>
+      </center>
   </div>
 
 </div>
